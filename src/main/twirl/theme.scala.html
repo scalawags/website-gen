@@ -1,0 +1,32 @@
+@(title: String)(body: Html)
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="google-site-verification" content="CmoBP09sh08XNdK242Ix6zlmrAtul7gwKz4xGtrRqxA" />
+    <title>@title</title>
+    <meta name="description" content="Monthly podcasts about Scala language">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+    @*<link href="http://thescalawags.libsyn.com/rss" rel="alternate" type="application/rss+xml" title="Scalawags Podcast" /> *@
+</head>
+<body>
+<header>
+    <a href="/" id="logo">Scalawags</a>
+    <nav>
+        <a href="https://twitter.com/thescalawags">Twitter</a>
+        <a href="https://plus.google.com/103832137805220517975" rel="publisher">Google+</a>
+        <a href="http://www.youtube.com/channel/UCHxNwi3l5CGZo1kG47k7i2Q/feed?filter=2">Youtube</a>
+        <a href="http://thescalawags.libsyn.com/">Libsyn</a>
+    </nav>
+</header>
+<img id="loader" src="load.gif" />
+<section id="list">
+ @body
+</section>
+<script src="jquery.min.js"></script>
+@* TODO - We need some jquery here that will attach to the palyers and set them up to run. *@
+</body>
+</html>
